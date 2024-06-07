@@ -3,7 +3,7 @@ from discord.ext import commands
 import asyncio
 
 TOKEN = 'ENTER API KEY HERE'
-PREFIX = '!'  # Change this to your desired bot prefix
+PREFIX = '/'  # Change this to your desired bot prefix
 
 # Define intents
 intents = discord.Intents.default()
