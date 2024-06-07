@@ -3,9 +3,12 @@ from discord.ext import commands
 import asyncio
 
 TOKEN = 'ENTER API KEY HERE'
-PREFIX = '!' 
+PREFIX = '!'  # Change this to your desired bot prefix
 
-bot = commands.Bot(command_prefix=PREFIX)
+# Define intents
+intents = discord.Intents.default()
+intents.presences = True
+bot = commands.Bot(command_prefix=PREFIX, intents=intents)
 
 # Dictionary to store user timeouts
 timeouts = {}
